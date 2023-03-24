@@ -1,0 +1,17 @@
+/*
+https://github.com/nawras92/the-complete-javascript-tutorial/blob/master/next/1-space-project/public/img/img2.jpg
+
+https://github.com/nawras92/the-complete-javascript-tutorial/blob/master/next/1-space-project/public/img/img3.jpg
+*/
+
+.section{
+    background-image: url("https://raw.githubusercontent.com/nawras92/the-complete-javascript-tutorial/master/next/1-space-project/public/img/img1.jpg");
+    min-height: 100vh;
+    position: relative;
+    opacity: 0.7;    
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    
+}

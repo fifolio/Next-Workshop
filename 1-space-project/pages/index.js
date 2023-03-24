@@ -1,10 +1,9 @@
-import AboutPage from "./about";
+import style from '../styles/Home.module.css'
 
 export default function HomePage(){
     return (
-        <div>
-            <h1>Hello world</h1>
-            <AboutPage />
+        <div className={style.section}>
+            <h1>Discover our Space</h1>
         </div>
     )
 }
