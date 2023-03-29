@@ -1,3 +1,4 @@
+import Link from "next/link"
 import "./globals.css"
 
 export const metadata = {
@@ -8,7 +9,9 @@ export const metadata = {
 const header = (
   <header>
     <div>
+      <Link href="/">
       <h1>fifolio blog</h1>
+      </Link>
       <p>Welcome to my blog space</p>
       <br />
     </div>
