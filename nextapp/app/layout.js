@@ -8,20 +8,18 @@ export const metadata = {
 
 const header = (
   <header>
-    <div>
+    <div className="text-center bg-slate-800 p-10 my-6 rounded-md">
       <Link href="/">
-      <h1>fifolio blog</h1>
+      <h1 className="text-3xl text-white">fifolio blog</h1>
       </Link>
-      <p>Welcome to my blog space</p>
-      <br />
+      <p className="text-slate-300">🖐️ Welcome to my blog space 💻</p>
     </div>
   </header>
 )
 
 const footer = (
   <footer>
-    <div>
-      <br />
+    <div className="border-t border-slate-400 mt-6 py-6 text-center text-gray-500">
       <h3>Developed by fifolio</h3>
     </div>
   </footer>
@@ -31,9 +29,11 @@ export default function RootLayout({ children }) {
   return (
     <html lang="en">
         <body>
+        <div className="mx-auto max-w-2xl px-6">
         {header}
         {children}
         {footer}
+        </div>
         </body>
     </html>
   )
