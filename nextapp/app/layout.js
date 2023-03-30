@@ -10,7 +10,7 @@ const header = (
   <header>
     <div className="text-center bg-slate-800 p-10 my-6 rounded-md">
       <Link href="/">
-      <h1 className="text-3xl text-white">fifolio blog</h1>
+      <h1 className="text-3xl font-bold text-white">fifolio blog</h1>
       </Link>
       <p className="text-slate-300">🖐️ Welcome to my blog space 💻</p>
     </div>

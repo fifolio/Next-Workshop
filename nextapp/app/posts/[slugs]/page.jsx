@@ -7,7 +7,7 @@ const getPostContent = (slug) => {
     const file = `${folder}${slug}.md`;
     const content = fs.readFileSync(file, "utf8");
     const matterResult = matter(content)
-    return matterResult;
+    return matterResult; 
 }
 
 export default function PostPage(props){
@@ -15,8 +15,10 @@ export default function PostPage(props){
     const post = getPostContent(slug);
     return (
         <div>
-            <h1>{post.data.title}</h1>       
+            <h1>{post.data.title}</h1>    
+            <article className="prose lg:prose-xl">
             <Markdown>{post.content}</Markdown>
+            </article>
         </div>
     )
 }
